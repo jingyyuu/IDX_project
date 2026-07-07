@@ -1,0 +1,14 @@
+column_or_check,severity,rule,flagged_rows,flagged_pct,recommendation
+ClosePrice,strict_remove,ClosePrice <= 0,1,0.0006,Remove before modeling unless team confirms these are valid.
+ClosePrice_to_ListPrice_Ratio,strict_review_remove,ClosePrice/ListPrice < 0.05 or > 5,76,0.0419,Remove before modeling unless team confirms these are valid.
+LivingArea,review_or_remove,"LivingArea <= 0 or > 20,000 sqft",89,0.049,Flag and discuss; remove or cap only if team agrees.
+BedroomsTotal,review_or_remove,BedroomsTotal < 0 or > 15,7,0.0039,Flag and discuss; remove or cap only if team agrees.
+BathroomsTotalInteger,review_or_remove,BathroomsTotalInteger < 0 or > 15,18,0.0099,Flag and discuss; remove or cap only if team agrees.
+LotSizeSquareFeet,review_or_remove,"LotSizeSquareFeet <= 0 or > 5,000,000 sqft",269,0.1482,Flag and discuss; remove or cap only if team agrees.
+YearBuilt,strict_remove,YearBuilt < 1800 or > 2026,1,0.0006,Remove before modeling unless team confirms these are valid.
+DaysOnMarket,strict_remove,DaysOnMarket < 0,18,0.0099,Remove before modeling unless team confirms these are valid.
+DaysOnMarket,review,DaysOnMarket > 3650,0,0.0,Flag and discuss; remove or cap only if team agrees.
+GarageSpaces,review_or_remove,GarageSpaces < 0 or > 10,90,0.0496,Flag and discuss; remove or cap only if team agrees.
+ParkingTotal,review_or_remove,ParkingTotal < 0 or > 20,386,0.2127,Flag and discuss; remove or cap only if team agrees.
+Latitude,strict_remove,"Latitude outside rough California range [32, 42.5]",34,0.0187,Remove before modeling unless team confirms these are valid.
+Longitude,strict_remove,"Longitude outside rough California range [-125, -114]",48,0.0264,Remove before modeling unless team confirms these are valid.
