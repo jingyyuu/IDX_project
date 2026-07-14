@@ -1,5 +1,5 @@
 # %% [markdown]
-# # Week 4 - Baseline Linear Regression
+# # Linear Model - Week 4
 #
 # **Goal:** train and evaluate a Linear Regression baseline for California
 # `Residential` / `SingleFamilyResidence` close prices.
