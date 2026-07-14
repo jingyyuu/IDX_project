@@ -208,7 +208,7 @@ eda_output_path = os.path.join(
     "week2_crmls_202501_202605_eda.csv"
 )
 
-df_eda.to_csv(eda_output_path, index=False)
+df_eda.to_csv(eda_output_path, index=False, encoding="utf-8")
 
 print("Saved Week 2 EDA data to:")
 print(eda_output_path)
