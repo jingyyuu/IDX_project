@@ -1,0 +1,30 @@
+{
+  "data_source": "Google Drive/IDX Summer Intern/outputs",
+  "train_file": "crmls_sfr_train_X12_2025-05_to_2026-04.csv",
+  "test_file": "crmls_sfr_test_2026-05.csv",
+  "selected_model": "M5_expanded_non_leaky",
+  "features": [
+    "LivingArea_scaled",
+    "BedroomsTotal_scaled",
+    "YearBuilt_scaled",
+    "LotSizeSquareFeet_scaled",
+    "BathroomsTotalInteger_scaled",
+    "Latitude_scaled",
+    "Longitude_scaled",
+    "PostalCode_frequency",
+    "City_frequency",
+    "AssociationFee_scaled",
+    "Stories_scaled",
+    "GarageSpaces_scaled",
+    "DaysOnMarket_scaled",
+    "HighSchoolDistrict_frequency"
+  ],
+  "model": "M5_expanded_non_leaky",
+  "n_features": 14,
+  "train_r2": 0.5077886698359876,
+  "test_r2": 0.537139538244529,
+  "test_mae": 504340.01939866086,
+  "test_rmse": 924031.5126323773,
+  "test_mape": 0.49344353809929764,
+  "test_mdape": 0.3284049321704472
+}
