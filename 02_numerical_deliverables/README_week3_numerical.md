@@ -1,5 +1,7 @@
 # Rebecca — Week 3 Numerical Data
 
+This folder contains the numerical checks used for the team's preprocessing work.
+
 ## What I worked on
 
 For my Week 3 part, I focused on the numerical columns in our California property dataset. The goal was to check whether the main numeric variables look reasonable before we use the data for modeling.
