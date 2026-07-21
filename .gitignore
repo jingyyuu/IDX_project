@@ -1,5 +1,5 @@
 # Team model-ready files downloaded from Google Drive (too large for Git).
 data/week3_drive/*.csv
-
 # Model artifacts are generated locally and should not be committed.
 outputs/week4_baseline/
+outputs/week4_linear_model/
