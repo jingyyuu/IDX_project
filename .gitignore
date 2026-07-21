@@ -3,3 +3,4 @@ data/week3_drive/*.csv
 # Model artifacts are generated locally and should not be committed.
 outputs/week4_baseline/
 outputs/week4_linear_model/
+outputs/week5_model_comparison/
