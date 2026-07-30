@@ -8,3 +8,4 @@ outputs/week6_feature_engineering/
 # Re-downloadable official California school-district boundary layer (large).
 data/week6_reference/*.geojson
 tmp/
+__pycache__/
