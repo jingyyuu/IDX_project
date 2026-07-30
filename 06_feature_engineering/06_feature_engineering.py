@@ -396,7 +396,15 @@ for axis in axes:
     axis.tick_params(axis="x", rotation=15)
 plt.tight_layout()
 plt.savefig(OUTPUT_DIR / "old_vs_new_feature_sets.png", dpi=160)
-plt.show()
+plt.close()
+
+# %% [markdown]
+# ## Final result
+
+# %%
+from IPython.display import Image
+
+display(Image(filename=OUTPUT_DIR / "old_vs_new_feature_sets.png"))
 
 # %% [markdown]
 # ## Conclusion
