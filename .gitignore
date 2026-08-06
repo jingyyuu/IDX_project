@@ -5,6 +5,7 @@ outputs/week4_baseline/
 outputs/week4_linear_model/
 outputs/week5_model_comparison/
 outputs/week6_feature_engineering/
+outputs/week7_advanced_models/
 # Re-downloadable official California school-district boundary layer (large).
 data/week6_reference/*.geojson
 tmp/
