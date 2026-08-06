@@ -1,0 +1,7 @@
+geopandas>=1.0
+lightgbm>=4.0
+matplotlib>=3.8
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.2
+shapely>=2.0
