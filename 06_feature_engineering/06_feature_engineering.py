@@ -17,6 +17,7 @@ from pathlib import Path
 import urllib.request
 
 import geopandas as gpd
+import joblib
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -385,6 +386,10 @@ predictions = pd.DataFrame({
     "week6_prediction": test_predictions["Week 6 engineered features"],
 })
 predictions.to_csv(OUTPUT_DIR / "test_predictions.csv", index=False)
+joblib.dump(
+    models["Week 6 engineered features"],
+    OUTPUT_DIR / "random_forest_week6.joblib",
+)
 
 plot = test_comparison.set_index("feature_set")
 fig, axes = plt.subplots(1, 2, figsize=(11, 4.5))
